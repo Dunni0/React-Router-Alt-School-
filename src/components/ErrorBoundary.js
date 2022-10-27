@@ -17,10 +17,10 @@ class ErrorBoundary extends React.Component {
     if (this.state.error) {
         return (
           <div>
-          <h1>Something Unexpected happened.</h1>
+          <h1 className="error_text">Something Unexpected happened.</h1>
           <div>
-          <h2>An Error Has Occurred</h2>
-          <details>
+          <small className="error_text">An Error Has Occurred </small>
+          <details className="error_text">
             {this.state.error && this.state.error.toString()}
             <br />
             {this.state.errorInfo.componentStack}

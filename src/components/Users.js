@@ -4,6 +4,7 @@ import useFetch from "../custom-hook/usefetch";
 import Pagination from "../components/Pagination";
 
 function Users() {
+
   const [page, setPage] = useState(1);
   const { loading, response, error } = useFetch(
     `https://randomuser.me/api/?page=${page}&results=10&seed=abc`
@@ -29,6 +30,8 @@ function Users() {
     setPage(pageNumber);
   };
 
+
+
   return (
     <div className="card_con"> 
       <div className="header">
@@ -39,6 +42,7 @@ function Users() {
           const username = `${user.name.title} ${user.name.first} ${user.name.last}`;
           const picture = `${user.picture.large}`;
           return (
+
             <div key={user.login.uuid} className="card">
               <div className="picture"> 
               <img className="image" src={picture} alt="profile picture" />

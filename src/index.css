@@ -194,6 +194,9 @@ body{
 .pagination__item--active {
   background-color: #d1d5db;
 }
+.error_text{
+  color: #fff;
+}
 
 .error{
   display: flex;
