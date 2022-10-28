@@ -90,6 +90,7 @@ body{
   justify-content:flex;
   align-content: center;
   margin-bottom: 1rem;
+  max-width: 100%;
 }
 
 .link{
@@ -122,6 +123,7 @@ body{
   flex-direction: column;
   justify-content:flex;
   align-content: center;
+  max-width: 100%;
 }
 
 .userCard_info, .info{
@@ -242,14 +244,6 @@ body{
      grid-template-columns: 270px 250px;
      justify-content: center;
      align-items: center;
-     border: 2px solid red;
  } 
 
- 
- /* .pagination__item{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  justify-content: center;
- } */
 }

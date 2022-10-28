@@ -10,7 +10,7 @@ function Users() {
     `https://randomuser.me/api/?page=${page}&results=10&seed=abc`
   );
 
-  const totalPage = 20;
+  const totalPage = 5;
 
   if (loading) {
     return <> Loading... </>;
